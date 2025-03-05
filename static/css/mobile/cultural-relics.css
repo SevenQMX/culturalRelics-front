@@ -1,0 +1,880 @@
+html, body {
+  background-color: lightgray;
+  overflow: hidden; }
+  html .screen_div, body .screen_div {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    html .screen_div > iframe, body .screen_div > iframe {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border: none; }
+    html .screen_div .logo_div, body .screen_div .logo_div {
+      position: absolute;
+      display: block;
+      top: 10px;
+      left: 10px;
+      z-index: 100; }
+    html .screen_div .return_btn, body .screen_div .return_btn {
+      position: absolute;
+      z-index: 100;
+      cursor: pointer; }
+      html .screen_div .return_btn a, body .screen_div .return_btn a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    html .screen_div .info_div, body .screen_div .info_div {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding-right: 5px;
+      z-index: 100;
+      text-align: right;
+      font-family: ostrichsans-bold-jian; }
+      html .screen_div .info_div > span, body .screen_div .info_div > span {
+        display: block; }
+    html .screen_div .btn_group, body .screen_div .btn_group {
+      position: absolute;
+      z-index: 100; }
+      html .screen_div .btn_group li, body .screen_div .btn_group li {
+        list-style-type: none;
+        cursor: pointer;
+        position: relative; }
+        html .screen_div .btn_group li i, body .screen_div .btn_group li i {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          width: 23px;
+          height: 23px; }
+        html .screen_div .btn_group li strong, body .screen_div .btn_group li strong {
+          position: absolute;
+          font-weight: lighter;
+          display: none;
+          color: #fff;
+          width: 12px; }
+      html .screen_div .btn_group li.active, body .screen_div .btn_group li.active {
+        background-color: #cc0000;
+        border-radius: 40px; }
+        html .screen_div .btn_group li.active strong, body .screen_div .btn_group li.active strong {
+          display: block; }
+    html .screen_div .measure_group, body .screen_div .measure_group {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      z-index: 100;
+      padding: 1px;
+      border-radius: 100px; }
+      html .screen_div .measure_group li, body .screen_div .measure_group li {
+        cursor: pointer; }
+        html .screen_div .measure_group li i, body .screen_div .measure_group li i {
+          display: block; }
+      html .screen_div .measure_group li[status="x"] i, body .screen_div .measure_group li[status="x"] i {
+        background: url("../../img/mobile/icon/measure_x.png") no-repeat;
+        background-size: 100% 100%; }
+      html .screen_div .measure_group li.active[status="x"], body .screen_div .measure_group li.active[status="x"] {
+        border-radius: 100px; }
+        html .screen_div .measure_group li.active[status="x"] i, body .screen_div .measure_group li.active[status="x"] i {
+          background: url("../../img/mobile/icon/measure_x.active.png") no-repeat;
+          background-size: 100% 100%; }
+      html .screen_div .measure_group li[status="y"] i, body .screen_div .measure_group li[status="y"] i {
+        background: url("../../img/mobile/icon/measure_y.png") no-repeat;
+        background-size: 100% 100%; }
+      html .screen_div .measure_group li.active[status="y"], body .screen_div .measure_group li.active[status="y"] {
+        border-radius: 100px; }
+        html .screen_div .measure_group li.active[status="y"] i, body .screen_div .measure_group li.active[status="y"] i {
+          background: url("../../img/mobile/icon/measure_y.active.png") no-repeat;
+          background-size: 100% 100%; }
+      html .screen_div .measure_group li[status="z"] i, body .screen_div .measure_group li[status="z"] i {
+        background: url("../../img/mobile/icon/measure_z.png") no-repeat;
+        background-size: 100% 100%; }
+      html .screen_div .measure_group li[status="z"], body .screen_div .measure_group li[status="z"] {
+        border-radius: 100px; }
+        html .screen_div .measure_group li[status="z"] i, body .screen_div .measure_group li[status="z"] i {
+          background: url("../../img/mobile/icon/measure_z.active.png") no-repeat;
+          background-size: 100% 100%; }
+    html .screen_div .cultural_relics_div, body .screen_div .cultural_relics_div {
+      display: none;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 200;
+      font-family: ostrichsans-light-jian;
+      background-color: #fafafa; }
+      html .screen_div .cultural_relics_div .cultural_relics_center, body .screen_div .cultural_relics_div .cultural_relics_center {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0 10.74% 0 13.14%; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove {
+          position: absolute; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main, body .screen_div .cultural_relics_div .cultural_relics_center .center_main {
+          width: 100%; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title {
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.85); }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date {
+            color: rgba(0, 0, 0, 0.65); }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+            color: rgba(0, 0, 0, 0.65); }
+            html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label {
+              color: rgba(0, 0, 0, 0.95); }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li:nth-last-child(1), body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li:nth-last-child(1) {
+            margin-bottom: 0px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible > span, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible > span {
+          display: block; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+          color: rgba(0, 0, 0, 0.65); }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar {
+          width: 4px;
+          height: 16px;
+          background-color: rgba(0, 0, 0, 0.1); }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track {
+          background-color: rgba(0, 0, 0, 0.01); }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.4); }
+    html .screen_div .cultural_relics_div.active, body .screen_div .cultural_relics_div.active {
+      display: block; }
+    html .screen_div .qrcode_div, body .screen_div .qrcode_div {
+      display: none;
+      position: absolute;
+      z-index: 200;
+      border-radius: 3px; }
+      html .screen_div .qrcode_div .qrcode_center_div, body .screen_div .qrcode_div .qrcode_center_div {
+        position: relative;
+        background-color: #fafafa;
+        border-radius: 3px; }
+        html .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white, body .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white {
+          position: absolute; }
+        html .screen_div .qrcode_div .qrcode_center_div img, body .screen_div .qrcode_div .qrcode_center_div img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-radius: 3px; }
+    html .screen_div .qrcode_div.active, body .screen_div .qrcode_div.active {
+      display: block; }
+  html .screen_div.whitebg .info_div, body .screen_div.whitebg .info_div {
+    color: rgba(0, 0, 0, 0.85);
+    border-right: 3px solid #cc9900; }
+  html .screen_div.whitebg .measure_group, body .screen_div.whitebg .measure_group {
+    background-color: rgba(0, 0, 0, 0.2); }
+    html .screen_div.whitebg .measure_group li.active, body .screen_div.whitebg .measure_group li.active {
+      background-color: #42424d; }
+  html .screen_div.blackbg .info_div, body .screen_div.blackbg .info_div {
+    color: rgba(250, 250, 250, 0.85);
+    border-right: 3px solid #a48854; }
+  html .screen_div.blackbg .measure_group, body .screen_div.blackbg .measure_group {
+    background-color: rgba(250, 250, 250, 0.2); }
+    html .screen_div.blackbg .measure_group li.active, body .screen_div.blackbg .measure_group li.active {
+      background-color: #42424d; }
+
+/* iphone4,iphone5 */
+@media screen and (max-width: 330px) {
+  html .screen_div .logo_div, body .screen_div .logo_div {
+    width: 160px;
+    height: 66px; }
+  html .screen_div .return_btn, body .screen_div .return_btn {
+    bottom: 30px;
+    left: 13px;
+    width: 25px;
+    height: 25px; }
+  html .screen_div .info_div .title, body .screen_div .info_div .title {
+    font-size: 1.7rem; }
+  html .screen_div .info_div .dates, body .screen_div .info_div .dates {
+    font-size: 1.3rem; }
+  html .screen_div .info_div .tag, body .screen_div .info_div .tag {
+    font-size: 1rem; }
+  html .screen_div .btn_group, body .screen_div .btn_group {
+    right: 18px;
+    bottom: 30px; }
+    html .screen_div .btn_group li, body .screen_div .btn_group li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      margin-right: 20px; }
+      html .screen_div .btn_group li i, body .screen_div .btn_group li i {
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 20px; }
+      html .screen_div .btn_group li strong, body .screen_div .btn_group li strong {
+        top: 2px;
+        left: 6px;
+        font-size: 1.2rem; }
+    html .screen_div .btn_group li.active, body .screen_div .btn_group li.active {
+      margin-top: -40px;
+      width: 24px;
+      height: 60px; }
+      html .screen_div .btn_group li.active i, body .screen_div .btn_group li.active i {
+        bottom: 6px;
+        left: 2px; }
+    html .screen_div .btn_group li:nth-last-child(1), body .screen_div .btn_group li:nth-last-child(1) {
+      margin-right: 0; }
+  html .screen_div .measure_group, body .screen_div .measure_group {
+    width: 28px;
+    height: 198px;
+    margin-top: -99px; }
+    html .screen_div .measure_group li, body .screen_div .measure_group li {
+      width: 100%;
+      height: 33.333%;
+      padding: 22px 0 0 5px; }
+      html .screen_div .measure_group li i, body .screen_div .measure_group li i {
+        display: block;
+        width: 16px;
+        height: 18px; }
+  html .screen_div .qrcode_div, body .screen_div .qrcode_div {
+    width: 90px;
+    height: 90px;
+    right: 28px;
+    bottom: 66px; }
+    html .screen_div .qrcode_div .qrcode_center_div, body .screen_div .qrcode_div .qrcode_center_div {
+      width: 100%;
+      height: 100%; }
+      html .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white, body .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white {
+        width: 15px;
+        height: 8px;
+        bottom: -8px;
+        left: 38px; }
+  html .screen_div .cultural_relics_div, body .screen_div .cultural_relics_div {
+    width: 100%;
+    right: -100%; }
+    html .screen_div .cultural_relics_div .cultural_relics_center, body .screen_div .cultural_relics_div .cultural_relics_center {
+      font-size: 1.2rem;
+      line-height: 1.2rem; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove {
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        background: url("../../img/mobile/icon/icon_remove.png") no-repeat;
+        background-size: 38px 14px;
+        background-position: 8px 8px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:hover, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:hover {
+        background-position: -16px 8px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_main, body .screen_div .cultural_relics_div .cultural_relics_center .center_main {
+        padding: 60px 0 15px 0; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title {
+          font-size: 2.2rem;
+          line-height: 2.2rem; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date {
+          margin-top: 7px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul {
+          padding-top: 30px; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+            margin-bottom: 14px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+        margin-bottom: 5px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+        line-height: 1.8rem; }
+  html .screen_div.whitebg .logo_div, body .screen_div.whitebg .logo_div {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.whitebg .return_btn, body .screen_div.whitebg .return_btn {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/home.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.whitebg .return_btn:active, body .screen_div.whitebg .return_btn:active {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/home_active.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.reset_div i, body .screen_div.whitebg .btn_group li.reset_div i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/camera.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.menu_btn i, body .screen_div.whitebg .btn_group li.menu_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/menu.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.hotspot_btn i, body .screen_div.whitebg .btn_group li.hotspot_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/video.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.measure_btn i, body .screen_div.whitebg .btn_group li.measure_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/measure.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.code_btn i, body .screen_div.whitebg .btn_group li.code_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/code.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.back_btn i, body .screen_div.whitebg .btn_group li.back_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/back.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group > li:active, body .screen_div.whitebg .btn_group > li:active {
+    background-position: -21px 0; }
+  html .screen_div.blackbg .logo_div, body .screen_div.blackbg .logo_div {
+    background: url("../../img/mobile/center/cultural-relics-backbg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.blackbg .return_btn, body .screen_div.blackbg .return_btn {
+    background: url("../../img/mobile/center/cultural-relics-backbg/home.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.blackbg .return_btn:active, body .screen_div.blackbg .return_btn:active {
+    background: url("../../img/mobile/center/cultural-relics-backbg/home_active.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.reset_div i, body .screen_div.blackbg .btn_group li.reset_div i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/camera.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.menu_btn i, body .screen_div.blackbg .btn_group li.menu_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/menu.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.hotspot_btn i, body .screen_div.blackbg .btn_group li.hotspot_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/video.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.measure_btn i, body .screen_div.blackbg .btn_group li.measure_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/measure.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.code_btn i, body .screen_div.blackbg .btn_group li.code_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/code.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.back_btn i, body .screen_div.blackbg .btn_group li.back_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/back.png") no-repeat;
+    background-size: 41px 20px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group > li:active, body .screen_div.blackbg .btn_group > li:active {
+    background-position: -21px 0; } }
+/* iphone6 */
+@media screen and (min-width: 331px) and (max-width: 375px) {
+  html .screen_div .logo_div, body .screen_div .logo_div {
+    width: 182px;
+    height: 74px; }
+  html .screen_div .return_btn, body .screen_div .return_btn {
+    bottom: 35px;
+    left: 16px;
+    width: 28px;
+    height: 28px; }
+  html .screen_div .info_div .title, body .screen_div .info_div .title {
+    font-size: 2.1rem; }
+  html .screen_div .info_div .dates, body .screen_div .info_div .dates {
+    font-size: 1.5rem; }
+  html .screen_div .info_div .tag, body .screen_div .info_div .tag {
+    font-size: 1.2rem; }
+  html .screen_div .btn_group, body .screen_div .btn_group {
+    right: 21px;
+    bottom: 35px;
+    height: 23px; }
+    html .screen_div .btn_group li, body .screen_div .btn_group li {
+      float: left;
+      width: 23px;
+      height: 23px;
+      margin-right: 28px; }
+      html .screen_div .btn_group li i, body .screen_div .btn_group li i {
+        bottom: 0;
+        left: 0;
+        width: 23px;
+        height: 23px; }
+      html .screen_div .btn_group li strong, body .screen_div .btn_group li strong {
+        top: 3px;
+        left: 8px; }
+    html .screen_div .btn_group li.active, body .screen_div .btn_group li.active {
+      margin-top: -43px;
+      width: 28px;
+      height: 70px; }
+      html .screen_div .btn_group li.active i, body .screen_div .btn_group li.active i {
+        bottom: 6px;
+        left: 2px; }
+    html .screen_div .btn_group li:nth-last-child(1), body .screen_div .btn_group li:nth-last-child(1) {
+      margin-right: 0; }
+  html .screen_div .measure_group, body .screen_div .measure_group {
+    width: 28px;
+    height: 198px;
+    margin-top: -99px; }
+    html .screen_div .measure_group li, body .screen_div .measure_group li {
+      width: 100%;
+      height: 33.333%;
+      padding: 22px 0 0 5px; }
+      html .screen_div .measure_group li i, body .screen_div .measure_group li i {
+        display: block;
+        width: 16px;
+        height: 18px; }
+  html .screen_div .qrcode_div, body .screen_div .qrcode_div {
+    width: 100px;
+    height: 100px;
+    right: 35px;
+    bottom: 70px; }
+    html .screen_div .qrcode_div .qrcode_center_div, body .screen_div .qrcode_div .qrcode_center_div {
+      width: 100%;
+      height: 100%; }
+      html .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white, body .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white {
+        width: 18px;
+        height: 9px;
+        bottom: -9px;
+        left: 41px; }
+  html .screen_div .cultural_relics_div, body .screen_div .cultural_relics_div {
+    width: 100%;
+    right: -100%; }
+    html .screen_div .cultural_relics_div .cultural_relics_center, body .screen_div .cultural_relics_div .cultural_relics_center {
+      font-size: 1.2rem;
+      line-height: 1.2rem; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove {
+        right: 17px;
+        top: 17px;
+        width: 30px;
+        height: 30px;
+        background: url("../../img/mobile/icon/icon_remove.png") no-repeat;
+        background-size: 38px 14px;
+        background-position: 8px 8px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:hover, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:hover {
+        background-position: -16px 8px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_main, body .screen_div .cultural_relics_div .cultural_relics_center .center_main {
+        padding: 68px 0 17px 0; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title {
+          font-size: 2.5rem;
+          line-height: 2.5rem; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date {
+          margin-top: 8px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul {
+          padding-top: 34px; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+            margin-bottom: 16px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+        margin-bottom: 5px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+        line-height: 2rem; }
+  html .screen_div.whitebg .logo_div, body .screen_div.whitebg .logo_div {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.whitebg .return_btn, body .screen_div.whitebg .return_btn {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/home.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.whitebg .return_btn:active, body .screen_div.whitebg .return_btn:active {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/home_active.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.reset_div i, body .screen_div.whitebg .btn_group li.reset_div i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/camera.png") no-repeat;
+    background-size: 47px 22px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.menu_btn i, body .screen_div.whitebg .btn_group li.menu_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/menu.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.hotspot_btn i, body .screen_div.whitebg .btn_group li.hotspot_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/video.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.measure_btn i, body .screen_div.whitebg .btn_group li.measure_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/measure.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.code_btn i, body .screen_div.whitebg .btn_group li.code_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/code.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.back_btn i, body .screen_div.whitebg .btn_group li.back_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/back.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group > li:active, body .screen_div.whitebg .btn_group > li:active {
+    background-position: -24px 0; }
+  html .screen_div.blackbg .logo_div, body .screen_div.blackbg .logo_div {
+    background: url("../../img/mobile/center/cultural-relics-backbg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.blackbg .return_btn, body .screen_div.blackbg .return_btn {
+    background: url("../../img/mobile/center/cultural-relics-backbg/home.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.blackbg .return_btn:active, body .screen_div.blackbg .return_btn:active {
+    background: url("../../img/mobile/center/cultural-relics-backbg/home_active.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.reset_div i, body .screen_div.blackbg .btn_group li.reset_div i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/camera.png") no-repeat;
+    background-size: 47px 22px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.menu_btn i, body .screen_div.blackbg .btn_group li.menu_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/menu.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.hotspot_btn i, body .screen_div.blackbg .btn_group li.hotspot_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/video.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.measure_btn i, body .screen_div.blackbg .btn_group li.measure_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/measure.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.code_btn i, body .screen_div.blackbg .btn_group li.code_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/code.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.back_btn i, body .screen_div.blackbg .btn_group li.back_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/back.png") no-repeat;
+    background-size: 47px 23px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group > li:active, body .screen_div.blackbg .btn_group > li:active {
+    background-position: -24px 0; } }
+/* iphone6Plus */
+@media screen and (min-width: 376px) and (max-width: 479px) {
+  html .screen_div .logo_div, body .screen_div .logo_div {
+    width: 182px;
+    height: 74px; }
+  html .screen_div .return_btn, body .screen_div .return_btn {
+    bottom: 39px;
+    left: 18px;
+    width: 31px;
+    height: 31px; }
+  html .screen_div .info_div .title, body .screen_div .info_div .title {
+    font-size: 2.3rem; }
+  html .screen_div .info_div .dates, body .screen_div .info_div .dates {
+    font-size: 1.7rem; }
+  html .screen_div .info_div .tag, body .screen_div .info_div .tag {
+    font-size: 1.3rem; }
+  html .screen_div .btn_group, body .screen_div .btn_group {
+    right: 23px;
+    bottom: 39px; }
+    html .screen_div .btn_group li, body .screen_div .btn_group li {
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin-right: 25px; }
+      html .screen_div .btn_group li i, body .screen_div .btn_group li i {
+        bottom: 0;
+        left: 0;
+        width: 26px;
+        height: 26px; }
+      html .screen_div .btn_group li strong, body .screen_div .btn_group li strong {
+        top: 3px;
+        left: 11px;
+        font-size: 1.4rem; }
+    html .screen_div .btn_group li.active, body .screen_div .btn_group li.active {
+      margin-top: -55px;
+      width: 36px;
+      height: 80px; }
+      html .screen_div .btn_group li.active i, body .screen_div .btn_group li.active i {
+        bottom: 6px;
+        left: 5px; }
+    html .screen_div .btn_group li:nth-last-child(1), body .screen_div .btn_group li:nth-last-child(1) {
+      margin-right: 0; }
+  html .screen_div .measure_group, body .screen_div .measure_group {
+    width: 36px;
+    height: 252px;
+    margin-top: -99px; }
+    html .screen_div .measure_group li, body .screen_div .measure_group li {
+      width: 100%;
+      height: 33.333%;
+      padding: 28px 0 0 6px; }
+      html .screen_div .measure_group li i, body .screen_div .measure_group li i {
+        display: block;
+        width: 22px;
+        height: 24px; }
+  html .screen_div .qrcode_div, body .screen_div .qrcode_div {
+    width: 110px;
+    height: 110px;
+    right: 36px;
+    bottom: 80px; }
+    html .screen_div .qrcode_div .qrcode_center_div, body .screen_div .qrcode_div .qrcode_center_div {
+      width: 100%;
+      height: 100%; }
+      html .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white, body .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white {
+        width: 20px;
+        height: 10px;
+        bottom: -9px;
+        left: 45px; }
+  html .screen_div .cultural_relics_div, body .screen_div .cultural_relics_div {
+    width: 100%;
+    right: -100%; }
+    html .screen_div .cultural_relics_div .cultural_relics_center, body .screen_div .cultural_relics_div .cultural_relics_center {
+      font-size: 1.5rem;
+      line-height: 1.5rem; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove {
+        right: 17px;
+        top: 17px;
+        width: 30px;
+        height: 30px;
+        background: url("../../img/mobile/icon/icon_remove.png") no-repeat;
+        background-size: 45px 16px;
+        background-position: 7px 7px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:hover, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:hover {
+        background-position: -22px 7px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_main, body .screen_div .cultural_relics_div .cultural_relics_center .center_main {
+        padding: 86px 0 22px 0; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title {
+          font-size: 3rem;
+          line-height: 30px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date {
+          margin-top: 11px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul {
+          padding-top: 42px; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+            margin-bottom: 21px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+        margin-bottom: 5px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+        line-height: 2.4rem; }
+  html .screen_div.whitebg .logo_div, body .screen_div.whitebg .logo_div {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.whitebg .return_btn, body .screen_div.whitebg .return_btn {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/home.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.whitebg .return_btn:active, body .screen_div.whitebg .return_btn:active {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/home_active.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.reset_div i, body .screen_div.whitebg .btn_group li.reset_div i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/camera.png") no-repeat;
+    background-size: 53px 25px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.menu_btn i, body .screen_div.whitebg .btn_group li.menu_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/menu.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.hotspot_btn i, body .screen_div.whitebg .btn_group li.hotspot_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/video.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.measure_btn i, body .screen_div.whitebg .btn_group li.measure_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/measure.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.code_btn i, body .screen_div.whitebg .btn_group li.code_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/code.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.back_btn i, body .screen_div.whitebg .btn_group li.back_btn i {
+    background: url("../../img/mobile/center/cultural-relics-whitebg/back.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group > li:active, body .screen_div.whitebg .btn_group > li:active {
+    background-position: -27px 0; }
+  html .screen_div.blackbg .logo_div, body .screen_div.blackbg .logo_div {
+    background: url("../../img/mobile/center/cultural-relics-backbg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.blackbg .return_btn, body .screen_div.blackbg .return_btn {
+    background: url("../../img/mobile/center/cultural-relics-backbg/home.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.blackbg .return_btn:active, body .screen_div.blackbg .return_btn:active {
+    background: url("../../img/mobile/center/cultural-relics-backbg/home_active.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.reset_div i, body .screen_div.blackbg .btn_group li.reset_div i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/camera.png") no-repeat;
+    background-size: 53px 25px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.menu_btn i, body .screen_div.blackbg .btn_group li.menu_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/menu.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.hotspot_btn i, body .screen_div.blackbg .btn_group li.hotspot_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/video.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.measure_btn i, body .screen_div.blackbg .btn_group li.measure_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/measure.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.code_btn i, body .screen_div.blackbg .btn_group li.code_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/code.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.back_btn i, body .screen_div.blackbg .btn_group li.back_btn i {
+    background: url("../../img/mobile/center/cultural-relics-backbg/back.png") no-repeat;
+    background-size: 53px 26px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group > li:active, body .screen_div.blackbg .btn_group > li:active {
+    background-position: -27px 0; } }
+/* ipad  mac*/
+@media screen and (min-width: 480px) {
+  html .screen_div .logo_div, body .screen_div .logo_div {
+    width: 200px;
+    height: 82px; }
+  html .screen_div .return_btn, body .screen_div .return_btn {
+    left: 10px;
+    bottom: 20px;
+    width: 36px;
+    height: 36px; }
+  html .screen_div .info_div .title, body .screen_div .info_div .title {
+    font-size: 3rem; }
+  html .screen_div .info_div .dates, body .screen_div .info_div .dates {
+    font-size: 2.1rem; }
+  html .screen_div .info_div .tag, body .screen_div .info_div .tag {
+    font-size: 1.6rem; }
+  html .screen_div .btn_group, body .screen_div .btn_group {
+    right: 23px;
+    bottom: 20px; }
+    html .screen_div .btn_group li, body .screen_div .btn_group li {
+      float: left;
+      width: 30px;
+      height: 32px;
+      margin-right: 29px; }
+      html .screen_div .btn_group li i, body .screen_div .btn_group li i {
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 32px; }
+      html .screen_div .btn_group li strong, body .screen_div .btn_group li strong {
+        top: 5px;
+        left: 10px;
+        font-size: 1.4rem; }
+    html .screen_div .btn_group li.active, body .screen_div .btn_group li.active {
+      margin-top: -58px;
+      width: 36px;
+      height: 90px; }
+      html .screen_div .btn_group li.active i, body .screen_div .btn_group li.active i {
+        bottom: 6px;
+        left: 3px; }
+    html .screen_div .btn_group li:nth-last-child(1), body .screen_div .btn_group li:nth-last-child(1) {
+      margin-right: 0; }
+  html .screen_div .measure_group, body .screen_div .measure_group {
+    width: 36px;
+    height: 252px;
+    margin-top: -99px; }
+    html .screen_div .measure_group li, body .screen_div .measure_group li {
+      width: 100%;
+      height: 33.333%;
+      padding: 28px 0 0 6px; }
+      html .screen_div .measure_group li i, body .screen_div .measure_group li i {
+        display: block;
+        width: 22px;
+        height: 24px; }
+  html .screen_div .cultural_relics_div, body .screen_div .cultural_relics_div {
+    width: 310px;
+    right: -310px; }
+    html .screen_div .cultural_relics_div .cultural_relics_center, body .screen_div .cultural_relics_div .cultural_relics_center {
+      font-size: 1.4rem;
+      line-height: 1.4rem; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove {
+        left: 22px;
+        top: 22px;
+        width: 11px;
+        height: 18px;
+        background: url("../../img/pc/center/cultural-relics-whitebg/icon_arrow_right.png") no-repeat;
+        background-size: 23px 18px;
+        background-position: 0 0; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:active, body .screen_div .cultural_relics_div .cultural_relics_center .icon_remove:active {
+        background-position: -12px 0; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_main, body .screen_div .cultural_relics_div .cultural_relics_center .center_main {
+        padding: 70px 0 40px 0; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title {
+          font-size: 2.6rem;
+          line-height: 30px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date {
+          margin-top: 10px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul {
+          padding-top: 40px; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+            margin-bottom: 20px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+        margin-bottom: 5px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+        line-height: 2.4rem; }
+  html .screen_div .qrcode_div, body .screen_div .qrcode_div {
+    width: 110px;
+    height: 110px;
+    right: 40px;
+    bottom: 70px; }
+    html .screen_div .qrcode_div .qrcode_center_div, body .screen_div .qrcode_div .qrcode_center_div {
+      width: 100%;
+      height: 100%; }
+      html .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white, body .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white {
+        width: 20px;
+        height: 10px;
+        bottom: -9px;
+        left: 45px; }
+  html .screen_div.whitebg .logo_div, body .screen_div.whitebg .logo_div {
+    background: url("../../img/pc/center/cultural-relics-whitebg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.whitebg .return_btn, body .screen_div.whitebg .return_btn {
+    background: url("../../img/pc/center/cultural-relics-whitebg/home.png") no-repeat;
+    background-position: 0 0;
+    background-size: 73px 36px; }
+  html .screen_div.whitebg .return_btn:active, body .screen_div.whitebg .return_btn:active {
+    background-position: -37px 0; }
+  html .screen_div.whitebg .btn_group li.reset_div i, body .screen_div.whitebg .btn_group li.reset_div i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/camera.png") no-repeat;
+    background-position: 0 3px;
+    background-size: 61px 27px; }
+  html .screen_div.whitebg .btn_group li.menu_btn i, body .screen_div.whitebg .btn_group li.menu_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/menu.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.whitebg .btn_group li.menu_btn i, body .screen_div.whitebg .btn_group li.menu_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/menu.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.whitebg .btn_group li.hotspot_btn i, body .screen_div.whitebg .btn_group li.hotspot_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/video.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.whitebg .btn_group li.measure_btn i, body .screen_div.whitebg .btn_group li.measure_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/measure.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.whitebg .btn_group li.code_btn i, body .screen_div.whitebg .btn_group li.code_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/code.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.whitebg .btn_group li.back_btn i, body .screen_div.whitebg .btn_group li.back_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/back.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.whitebg .btn_group > li:active, body .screen_div.whitebg .btn_group > li:active {
+    background-position: -31px 2px; }
+  html .screen_div.blackbg .logo_div, body .screen_div.blackbg .logo_div {
+    background: url("../../img/pc/center/cultural-relics-blackbg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.blackbg .return_btn, body .screen_div.blackbg .return_btn {
+    background: url("../../img/pc/center/cultural-relics-blackbg/home.png") no-repeat;
+    background-size: 73px 36px;
+    background-position: 0 0; }
+  html .screen_div.blackbg .return_btn:active, body .screen_div.blackbg .return_btn:active {
+    background-position: -37px 0; }
+  html .screen_div.blackbg .btn_group li.reset_div i, body .screen_div.blackbg .btn_group li.reset_div i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/camera.png") no-repeat;
+    background-position: 0 3px;
+    background-size: 61px 27px; }
+  html .screen_div.blackbg .btn_group li.menu_btn i, body .screen_div.blackbg .btn_group li.menu_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/menu.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.blackbg .btn_group li.hotspot_btn i, body .screen_div.blackbg .btn_group li.hotspot_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/video.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.blackbg .btn_group li.measure_btn i, body .screen_div.blackbg .btn_group li.measure_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/measure.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.blackbg .btn_group li.code_btn i, body .screen_div.blackbg .btn_group li.code_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/code.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.blackbg .btn_group li.back_btn i, body .screen_div.blackbg .btn_group li.back_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/back.png") no-repeat;
+    background-position: 0 2px; }
+  html .screen_div.blackbg .btn_group > li:active, body .screen_div.blackbg .btn_group > li:active {
+    background-position: -31px 2px; }
+  html .screen_div.blackbg .cultural_relics_div, body .screen_div.blackbg .cultural_relics_div {
+    background-color: #68707a; }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .icon_remove, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .icon_remove {
+      background: url("../../img/pc/center/cultural-relics-blackbg/icon_arrow_right.png") no-repeat;
+      background-size: 23px 18px;
+      background-position: 0 0; }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .icon_remove:active, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .icon_remove:active {
+      background-position: -12px 0; }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_title {
+      color: rgba(250, 250, 250, 0.85); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_date {
+      color: rgba(250, 250, 250, 0.65); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+      color: rgba(250, 250, 250, 0.65); }
+      html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label {
+        color: rgba(250, 250, 250, 0.95); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+      color: rgba(250, 250, 250, 0.95); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+      color: rgba(250, 250, 250, 0.65); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar {
+      width: 4px;
+      height: 16px;
+      background-color: rgba(250, 250, 250, 0.1); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track {
+      background-color: rgba(250, 250, 250, 0.01); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb {
+      background-color: rgba(250, 250, 250, 0.4); } }

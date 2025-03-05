@@ -1,0 +1,512 @@
+html, body {
+  width: 100%;
+  background-color: #fafafa;
+  font-family: ostrichsans-light-jian; }
+  html section, body section {
+    width: 100%; }
+    html section .contain_div, body section .contain_div {
+      width: 100%; }
+    html section .banner, body section .banner {
+      width: 100%;
+      background: url("../../img/mobile/center/index/banner.jpg") no-repeat;
+      background-size: cover;
+      background-position: center bottom; }
+      html section .banner .search_div, body section .banner .search_div {
+        width: 100%;
+        border: none;
+        position: relative;
+        opacity: 0.75; }
+        html section .banner .search_div .search_input, body section .banner .search_div .search_input {
+          height: 100%;
+          width: 100%;
+          border: none;
+          outline: none; }
+        html section .banner .search_div button, body section .banner .search_div button {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          border: none;
+          outline: none;
+          background-color: rgba(0, 0, 0, 0.001); }
+    html section .banner.search, body section .banner.search {
+      background: #fafafa; }
+      html section .banner.search .search_div, body section .banner.search .search_div {
+        border: 1px solid rgba(0, 0, 0, 0.1); }
+    html section .tab_div, body section .tab_div {
+      width: 100%; }
+      html section .tab_div .contain_div, body section .tab_div .contain_div {
+        position: relative;
+        height: 100%; }
+        html section .tab_div .contain_div .bootstrap-select, body section .tab_div .contain_div .bootstrap-select {
+          float: left;
+          width: 20% !important;
+          position: static;
+          background-color: rgba(0, 0, 0, 0.001) !important;
+          box-shadow: none; }
+          html section .tab_div .contain_div .bootstrap-select .glyphicon-ok:before, body section .tab_div .contain_div .bootstrap-select .glyphicon-ok:before {
+            content: none !important; }
+          html section .tab_div .contain_div .bootstrap-select .btn-default.active.focus,
+          html section .tab_div .contain_div .bootstrap-select .btn-default.active:focus,
+          html section .tab_div .contain_div .bootstrap-select .btn-default.active:hover,
+          html section .tab_div .contain_div .bootstrap-select .btn-default:active.focus,
+          html section .tab_div .contain_div .bootstrap-select .btn-default:active:focus,
+          html section .tab_div .contain_div .bootstrap-select .btn-default:active:hover,
+          html section .tab_div .contain_div .bootstrap-select .open > .btn-default.dropdown-toggle.focus,
+          html section .tab_div .contain_div .bootstrap-select .open > .btn-default.dropdown-toggle:focus,
+          html section .tab_div .contain_div .bootstrap-select .open > .btn-default.dropdown-toggle:hover, body section .tab_div .contain_div .bootstrap-select .btn-default.active.focus,
+          body section .tab_div .contain_div .bootstrap-select .btn-default.active:focus,
+          body section .tab_div .contain_div .bootstrap-select .btn-default.active:hover,
+          body section .tab_div .contain_div .bootstrap-select .btn-default:active.focus,
+          body section .tab_div .contain_div .bootstrap-select .btn-default:active:focus,
+          body section .tab_div .contain_div .bootstrap-select .btn-default:active:hover,
+          body section .tab_div .contain_div .bootstrap-select .open > .btn-default.dropdown-toggle.focus,
+          body section .tab_div .contain_div .bootstrap-select .open > .btn-default.dropdown-toggle:focus,
+          body section .tab_div .contain_div .bootstrap-select .open > .btn-default.dropdown-toggle:hover {
+            color: #ff4000;
+            background-color: rgba(250, 250, 250, 0.001);
+            border-color: rgba(250, 250, 250, 0.001);
+            outline: none  !important; }
+          html section .tab_div .contain_div .bootstrap-select .dropdown-toggle, body section .tab_div .contain_div .bootstrap-select .dropdown-toggle {
+            width: auto;
+            border: none;
+            border-radius: 0;
+            background-color: rgba(250, 250, 250, 0.001);
+            padding-right: 30px;
+            outline: none; }
+            html section .tab_div .contain_div .bootstrap-select .dropdown-toggle .filter-option.pull-left, body section .tab_div .contain_div .bootstrap-select .dropdown-toggle .filter-option.pull-left {
+              width: 30px !important; }
+            html section .tab_div .contain_div .bootstrap-select .dropdown-toggle .caret, body section .tab_div .contain_div .bootstrap-select .dropdown-toggle .caret {
+              border: none;
+              width: 12px;
+              height: 7px;
+              margin-top: -4px !important;
+              background: url(../../img/mobile/icon/icon_arrow_black.png) no-repeat;
+              background-size: 25px 7px;
+              background-position: 0 0; }
+          html section .tab_div .contain_div .bootstrap-select div.dropdown-menu, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 0;
+            margin-top: -1px; }
+            html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu {
+              width: 100%; }
+              html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+                html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a {
+                  width: 100%;
+                  color: rgba(0, 0, 0, 0.9); }
+                  html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a span, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a span {
+                    color: rgba(0, 0, 0, 0.9); }
+                html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:focus, html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:hover, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:focus, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:hover {
+                  background-color: rgba(250, 250, 250, 0.001);
+                  outline: none;
+                  color: #ff4000; }
+                  html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:focus span, html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:hover span, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:focus span, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li a:hover span {
+                    color: #ff4000; }
+              html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.divider, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.divider {
+                height: 0;
+                background-color: rgba(250, 250, 250, 0.001);
+                border-bottom: 0px; }
+              html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.dropdown-header, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.dropdown-header {
+                color: #000;
+                font-weight: 300;
+                font-size: 1.4rem; }
+              html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.selected a, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.selected a {
+                color: #ff4000 !important; }
+                html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.selected a span, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li.selected a span {
+                  color: #ff4000 !important; }
+              html section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li:nth-last-child(1), body section .tab_div .contain_div .bootstrap-select div.dropdown-menu ul.dropdown-menu > li:nth-last-child(1) {
+                border-bottom: none; }
+            html section .tab_div .contain_div .bootstrap-select div.dropdown-menu > ul::-webkit-scrollbar, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu > ul::-webkit-scrollbar {
+              width: 4px;
+              height: 16px;
+              background-color: #efefef; }
+            html section .tab_div .contain_div .bootstrap-select div.dropdown-menu > ul::-webkit-scrollbar-track, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu > ul::-webkit-scrollbar-track {
+              background-color: rgba(0, 0, 0, 0.01); }
+            html section .tab_div .contain_div .bootstrap-select div.dropdown-menu > ul::-webkit-scrollbar-thumb, body section .tab_div .contain_div .bootstrap-select div.dropdown-menu > ul::-webkit-scrollbar-thumb {
+              background-color: rgba(0, 0, 0, 0.2); }
+        html section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle, body section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle {
+          color: #ff4000;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+          html section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle .caret, body section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle .caret {
+            background: url(../../img/mobile/icon/icon_arrow_orange.png) no-repeat;
+            background-size: 25px 7px;
+            background-position: -14px 0; }
+        html section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle:before, html section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle:after, body section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle:before, body section .tab_div .contain_div .bootstrap-select.show-menu-arrow.open .dropdown-toggle:after {
+          display: none; }
+        html section .tab_div .contain_div .btn-default, html section .tab_div .contain_div .btn-default:active, html section .tab_div .contain_div .btn-default:focus, html section .tab_div .contain_div .btn-default:hover, body section .tab_div .contain_div .btn-default, body section .tab_div .contain_div .btn-default:active, body section .tab_div .contain_div .btn-default:focus, body section .tab_div .contain_div .btn-default:hover {
+          outline: none !important;
+          background-color: rgba(250, 250, 250, 0.001) !important;
+          border-color: rgba(250, 250, 250, 0.001) !important;
+          box-shadow: none !important; }
+    html section .culturalrelic_div, body section .culturalrelic_div {
+      width: 100%;
+      min-height: 120px; }
+      html section .culturalrelic_div .culturalrelic_list, body section .culturalrelic_div .culturalrelic_list {
+        width: 100%;
+        overflow: hidden; }
+        html section .culturalrelic_div .culturalrelic_list .cultural_li, body section .culturalrelic_div .culturalrelic_list .cultural_li {
+          float: left;
+          width: 48.55%;
+          margin-right: 2.9%; }
+          html section .culturalrelic_div .culturalrelic_list .cultural_li div.li_img, body section .culturalrelic_div .culturalrelic_list .cultural_li div.li_img {
+            width: 100%;
+            background-color: #efefef; }
+            html section .culturalrelic_div .culturalrelic_list .cultural_li div.li_img img, body section .culturalrelic_div .culturalrelic_list .cultural_li div.li_img img {
+              width: 100% !important; }
+          html section .culturalrelic_div .culturalrelic_list .cultural_li .li_info, body section .culturalrelic_div .culturalrelic_list .cultural_li .li_info {
+            width: 100%;
+            border: 1px solid #efefef;
+            border-top: none;
+            color: rgba(0, 0, 0, 0.7); }
+            html section .culturalrelic_div .culturalrelic_list .cultural_li .li_info > span, body section .culturalrelic_div .culturalrelic_list .cultural_li .li_info > span {
+              display: block; }
+            html section .culturalrelic_div .culturalrelic_list .cultural_li .li_info .info_title, body section .culturalrelic_div .culturalrelic_list .cultural_li .li_info .info_title {
+              font-size: 1.4rem;
+              line-height: 1.4rem; }
+            html section .culturalrelic_div .culturalrelic_list .cultural_li .li_info .info_date, body section .culturalrelic_div .culturalrelic_list .cultural_li .li_info .info_date {
+              font-size: 1.2rem;
+              line-height: 1.2rem; }
+  html footer, body footer {
+    font-size: 1.2rem;
+    background-color: #4c4c4c; }
+    html footer .contain_div .footer_div, body footer .contain_div .footer_div {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 8px; }
+      html footer .contain_div .footer_div > div, body footer .contain_div .footer_div > div {
+        height: 20px;
+        color: rgba(250, 250, 250, 0.9);
+        margin-bottom: 3px; }
+        html footer .contain_div .footer_div > div label, body footer .contain_div .footer_div > div label {
+          line-height: 1.5rem;
+          vertical-align: top; }
+        html footer .contain_div .footer_div > div .view_amount_ul, body footer .contain_div .footer_div > div .view_amount_ul {
+          overflow: hidden;
+          display: inline-block;
+          padding-left: 14px;
+          line-height: 1.5rem; }
+          html footer .contain_div .footer_div > div .view_amount_ul > li, body footer .contain_div .footer_div > div .view_amount_ul > li {
+            float: left;
+            width: 15px;
+            height: 20px;
+            border: 1px solid rgba(250, 250, 250, 0.2);
+            margin-left: 1px;
+            text-align: center; }
+      html footer .contain_div .footer_div p, body footer .contain_div .footer_div p {
+        color: rgba(250, 250, 250, 0.6);
+        line-height: 1.5rem; }
+
+/* iphone4,iphone5 */
+@media screen and (max-width: 330px) {
+  html #scrollUp, body #scrollUp {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 34px;
+    height: 34px;
+    background: url("../../img/mobile/icon/icon_back_to_top.png") no-repeat;
+    background-size: 34px 34px;
+    background-position: 0 0; }
+  html .contain_div, body .contain_div {
+    padding: 0 8px; }
+  html section, body section {
+    font-size: 1.2rem; }
+    html section .banner, body section .banner {
+      height: 170px;
+      padding-top: 7px; }
+      html section .banner .search_div, body section .banner .search_div {
+        height: 28px; }
+        html section .banner .search_div .search_input, body section .banner .search_div .search_input {
+          padding-left: 5px; }
+        html section .banner .search_div button, body section .banner .search_div button {
+          width: 28px;
+          height: 28px;
+          background: url(../../img/mobile/icon/icon_search.png) no-repeat;
+          background-size: 38px 14px;
+          background-position: 7px 7px; }
+        html section .banner .search_div button:active, body section .banner .search_div button:active {
+          background-position: -17px 7px; }
+    html section .banner.search, body section .banner.search {
+      height: 40px; }
+    html section .tab_div, body section .tab_div {
+      height: 34px; }
+      html section .tab_div .contain_div, body section .tab_div .contain_div {
+        padding-top: 6px; }
+        html section .tab_div .contain_div .dropdown-toggle, body section .tab_div .contain_div .dropdown-toggle {
+          font-size: 1.2rem; }
+        html section .tab_div .contain_div div.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu {
+          top: 34px; }
+          html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu {
+            padding-left: 8px; }
+            html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a {
+              font-size: 1.2rem;
+              height: 40px;
+              line-height: 40px; }
+              html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark {
+                width: 10px;
+                height: 8px;
+                background: url("../../img/mobile/icon/icon_selected.png") no-repeat;
+                background-size: 10px 8px;
+                background-position: 0 0;
+                margin-top: 14px !important; }
+    html section .culturalrelic_div .culturalrelic_list > li, body section .culturalrelic_div .culturalrelic_list > li {
+      margin-bottom: 9px; }
+      html section .culturalrelic_div .culturalrelic_list > li img, body section .culturalrelic_div .culturalrelic_list > li img {
+        height: 148px; }
+      html section .culturalrelic_div .culturalrelic_list > li .li_info, body section .culturalrelic_div .culturalrelic_list > li .li_info {
+        height: 50px;
+        padding: 7px 6px; }
+        html section .culturalrelic_div .culturalrelic_list > li .li_info .info_title, body section .culturalrelic_div .culturalrelic_list > li .li_info .info_title {
+          margin-bottom: 4px; }
+    html section .culturalrelic_div .culturalrelic_error, body section .culturalrelic_div .culturalrelic_error {
+      padding: 80px 0;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center; }
+      html section .culturalrelic_div .culturalrelic_error i, body section .culturalrelic_div .culturalrelic_error i {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
+      html section .culturalrelic_div .culturalrelic_error span, body section .culturalrelic_div .culturalrelic_error span {
+        display: inline-block;
+        height: 1.2rem;
+        line-height: 1.8rem;
+        padding: 0 10px;
+        vertical-align: middle; } }
+/* iphone6 */
+@media screen and (min-width: 331px) and (max-width: 375px) {
+  html #scrollUp, body #scrollUp {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 34px;
+    height: 34px;
+    background: url("../../img/mobile/icon/icon_back_to_top.png") no-repeat;
+    background-size: 34px 34px;
+    background-position: 0 0; }
+  html .contain_div, body .contain_div {
+    padding: 0 20px; }
+  html section, body section {
+    font-size: 1.4rem; }
+    html section .banner, body section .banner {
+      height: 192px;
+      padding-top: 8px; }
+      html section .banner .search_div, body section .banner .search_div {
+        height: 32px; }
+        html section .banner .search_div .search_input, body section .banner .search_div .search_input {
+          padding-left: 8px; }
+        html section .banner .search_div button, body section .banner .search_div button {
+          width: 32px;
+          height: 32px;
+          background: url(../../img/mobile/icon/icon_search.png) no-repeat;
+          background-size: 38px 14px;
+          background-position: 9px 9px; }
+        html section .banner .search_div button:active, body section .banner .search_div button:active {
+          background-position: -15px 9px; }
+    html section .banner.search, body section .banner.search {
+      height: 44px; }
+    html section .tab_div, body section .tab_div {
+      height: 40px; }
+      html section .tab_div .contain_div, body section .tab_div .contain_div {
+        padding-top: 8px; }
+        html section .tab_div .contain_div .dropdown-toggle, body section .tab_div .contain_div .dropdown-toggle {
+          font-size: 1.4rem; }
+        html section .tab_div .contain_div div.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu {
+          top: 40px; }
+          html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu {
+            padding-left: 20px; }
+            html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a {
+              font-size: 1.4rem;
+              height: 44px;
+              line-height: 44px; }
+              html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark {
+                width: 12px;
+                height: 10px;
+                background: url("../../img/mobile/icon/icon_selected.png") no-repeat;
+                background-size: 12px 10px;
+                background-position: 0 0;
+                margin-top: 16px !important; }
+    html section .culturalrelic_div .culturalrelic_list > li, body section .culturalrelic_div .culturalrelic_list > li {
+      margin-bottom: 10px; }
+      html section .culturalrelic_div .culturalrelic_list > li img, body section .culturalrelic_div .culturalrelic_list > li img {
+        height: 163px; }
+      html section .culturalrelic_div .culturalrelic_list > li .li_info, body section .culturalrelic_div .culturalrelic_list > li .li_info {
+        height: 50px;
+        padding: 7px 6px; }
+        html section .culturalrelic_div .culturalrelic_list > li .li_info .info_title, body section .culturalrelic_div .culturalrelic_list > li .li_info .info_title {
+          margin-bottom: 4px; }
+    html section .culturalrelic_div .culturalrelic_error, body section .culturalrelic_div .culturalrelic_error {
+      padding: 80px 0;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center; }
+      html section .culturalrelic_div .culturalrelic_error i, body section .culturalrelic_div .culturalrelic_error i {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
+      html section .culturalrelic_div .culturalrelic_error span, body section .culturalrelic_div .culturalrelic_error span {
+        display: inline-block;
+        height: 1.2rem;
+        line-height: 1.8rem;
+        padding: 0 10px;
+        vertical-align: middle; } }
+/* iphone6Plus */
+@media screen and (min-width: 376px) and (max-width: 479px) {
+  html #scrollUp, body #scrollUp {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 40px;
+    height: 40px;
+    background: url("../../img/mobile/icon/icon_back_to_top.png") no-repeat;
+    background-size: 40px 40px;
+    background-position: 0 0; }
+  html .contain_div, body .contain_div {
+    padding: 0 24px; }
+  html section, body section {
+    font-size: 1.6rem; }
+    html section .banner, body section .banner {
+      height: 246px;
+      padding-top: 10px; }
+      html section .banner .search_div, body section .banner .search_div {
+        height: 40px; }
+        html section .banner .search_div .search_input, body section .banner .search_div .search_input {
+          padding-left: 10px; }
+        html section .banner .search_div button, body section .banner .search_div button {
+          width: 40px;
+          height: 40px;
+          background: url(../../img/mobile/icon/icon_search.png) no-repeat;
+          background-size: 46px 18px;
+          background-position: 12px 12px; }
+        html section .banner .search_div button:active, body section .banner .search_div button:active {
+          background-position: -17px 12px; }
+    html section .banner.search, body section .banner.search {
+      height: 58px; }
+    html section .tab_div, body section .tab_div {
+      height: 44px; }
+      html section .tab_div .contain_div, body section .tab_div .contain_div {
+        padding-top: 10px; }
+        html section .tab_div .contain_div .dropdown-toggle, body section .tab_div .contain_div .dropdown-toggle {
+          font-size: 1.4rem; }
+        html section .tab_div .contain_div div.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu {
+          top: 44px; }
+          html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu {
+            padding-left: 20px; }
+            html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a {
+              font-size: 1.4rem;
+              height: 44px;
+              line-height: 44px; }
+              html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark {
+                width: 12px;
+                height: 10px;
+                background: url("../../img/mobile/icon/icon_selected.png") no-repeat;
+                background-size: 12px 10px;
+                background-position: 0 0;
+                margin-top: 16px !important; }
+    html section .culturalrelic_div .culturalrelic_list > li, body section .culturalrelic_div .culturalrelic_list > li {
+      margin-bottom: 13px; }
+      html section .culturalrelic_div .culturalrelic_list > li img, body section .culturalrelic_div .culturalrelic_list > li img {
+        height: 178px; }
+      html section .culturalrelic_div .culturalrelic_list > li .li_info, body section .culturalrelic_div .culturalrelic_list > li .li_info {
+        height: 50px;
+        padding: 7px 6px; }
+        html section .culturalrelic_div .culturalrelic_list > li .li_info .info_title, body section .culturalrelic_div .culturalrelic_list > li .li_info .info_title {
+          margin-bottom: 4px; }
+    html section .culturalrelic_div .culturalrelic_error, body section .culturalrelic_div .culturalrelic_error {
+      padding: 80px 0;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center; }
+      html section .culturalrelic_div .culturalrelic_error i, body section .culturalrelic_div .culturalrelic_error i {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
+      html section .culturalrelic_div .culturalrelic_error span, body section .culturalrelic_div .culturalrelic_error span {
+        display: inline-block;
+        height: 1.4rem;
+        line-height: 1.6rem;
+        padding: 0 10px;
+        vertical-align: middle; } }
+/* ipad  mac*/
+@media screen and (min-width: 480px) {
+  html #scrollUp, body #scrollUp {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    background: url("../../img/mobile/icon/icon_back_to_top.png") no-repeat;
+    background-size: 40px 40px;
+    background-position: 0 0; }
+  html .contain_div, body .contain_div {
+    padding: 0 24px; }
+  html section, body section {
+    font-size: 1.6rem; }
+    html section .banner, body section .banner {
+      height: 246px;
+      padding-top: 10px; }
+      html section .banner .search_div, body section .banner .search_div {
+        height: 40px; }
+        html section .banner .search_div .search_input, body section .banner .search_div .search_input {
+          padding-left: 10px; }
+        html section .banner .search_div button, body section .banner .search_div button {
+          width: 40px;
+          height: 40px;
+          background: url("../../img/mobile/icon/icon_search.png") no-repeat;
+          background-size: 44px 18px;
+          background-position: 12px 12px; }
+        html section .banner .search_div button:active, body section .banner .search_div button:active {
+          background-position: -16px 12px; }
+    html section .banner.search, body section .banner.search {
+      height: 58px; }
+    html section .tab_div, body section .tab_div {
+      height: 44px; }
+      html section .tab_div .contain_div, body section .tab_div .contain_div {
+        padding-top: 10px; }
+        html section .tab_div .contain_div .dropdown-toggle, body section .tab_div .contain_div .dropdown-toggle {
+          font-size: 1.4rem; }
+        html section .tab_div .contain_div div.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu {
+          top: 44px; }
+          html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu {
+            padding-left: 20px; }
+            html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a {
+              font-size: 1.4rem;
+              height: 44px;
+              line-height: 44px; }
+              html section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark, body section .tab_div .contain_div div.dropdown-menu ul.dropdown-menu > li a .check-mark {
+                width: 12px;
+                height: 10px;
+                background: url("../../img/mobile/icon/icon_selected.png") no-repeat;
+                background-size: 12px 10px;
+                background-position: 0 0;
+                margin-top: 16px !important; }
+    html section .culturalrelic_div .culturalrelic_list > li, body section .culturalrelic_div .culturalrelic_list > li {
+      margin-bottom: 20px; }
+      html section .culturalrelic_div .culturalrelic_list > li img, body section .culturalrelic_div .culturalrelic_list > li img {
+        height: 350px; }
+      html section .culturalrelic_div .culturalrelic_list > li .li_info, body section .culturalrelic_div .culturalrelic_list > li .li_info {
+        height: 50px;
+        padding: 7px 6px; }
+        html section .culturalrelic_div .culturalrelic_list > li .li_info .info_title, body section .culturalrelic_div .culturalrelic_list > li .li_info .info_title {
+          margin-bottom: 4px; }
+    html section .culturalrelic_div .culturalrelic_error, body section .culturalrelic_div .culturalrelic_error {
+      padding: 80px 0;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center; }
+      html section .culturalrelic_div .culturalrelic_error i, body section .culturalrelic_div .culturalrelic_error i {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
+      html section .culturalrelic_div .culturalrelic_error span, body section .culturalrelic_div .culturalrelic_error span {
+        display: inline-block;
+        height: 1.4rem;
+        line-height: 1.8rem;
+        padding: 0 10px;
+        vertical-align: middle; } }

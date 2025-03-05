@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>数字文物</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<link rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="threed-model-browser.css"/>
+	</head>
+
+	<body>
+		<div class="canvas_div"></div>
+		<div class="hotSpot_div" style="display: block">
+			<ul class="hotSpot_ul"></ul>
+		</div>
+
+		<script src="../../common/jquery.min.js"></script>
+		<script src="../../common/common.js"></script>
+		<script src="../../common/resize.js"></script>
+
+		<script src="../../threejs/three.min.js"></script>
+		<script src="../../threejs/libs/stats.min.js"></script>
+		<script src="../../threejs/renderers/Projector.js"></script>
+		<script src="../../threejs/loaders/OBJLoader.js"></script>
+		<script src="../../threejs/controls/TrackballControls.js"></script>
+		<script src="../../threejs/controls/TransformControls.js"></script>
+		<script src="../../threejs/Detector.js"></script>
+		<script src="../../threejs/postprocessing/EffectComposer.js"></script>
+		<script src="../../threejs/shaders/CopyShader.js"></script>
+		<script src="../../threejs/postprocessing/RenderPass.js"></script>
+		<script src="../../threejs/postprocessing/ShaderPass.js"></script>
+		<script src="../../threejs/postprocessing/FilmPass.js"></script>
+		<script src="../../threejs/utils/SceneUtils.js"></script>
+		<script src="../../threejs/utils/GeometryUtils.js"></script>
+		<script src="../../threejs/lines/LineMaterial.js"></script>
+		<script src="../../threejs/loaders/MTLLoader.js"></script>
+		<script src="../../threejs/loaders/DDSLoader.js"></script>
+		<script src="../../threejs/controls/OrbitControls.js"></script>
+
+		<script src="../../tween/tweenjs.js"></script>
+
+		<script src="../threed-model-browser.js"></script>
+		<script src="threed-model-browser-hotspot.js"></script>
+		<script>
+            $(function () {
+                $("html,body .canvas_div").on('touchmove',function(e){
+                    e.preventDefault();
+                });
+                $("html,body .hotSpot_div").on('touchmove',function(e){
+                    e.preventDefault();
+                });
+            });
+		</script>
+	</body>
+</html>

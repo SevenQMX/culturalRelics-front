@@ -1,0 +1,18 @@
+newmtl etetert:material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd 165-2.jpg
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 1000.00
+newmtl fsdfsf:material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd 165-1.jpg
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 1000.00

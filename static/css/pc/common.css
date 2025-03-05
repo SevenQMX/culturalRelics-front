@@ -1,0 +1,99 @@
+body, div,
+dl, dt, dd,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset,
+legend, input, textarea, p, blockquote,
+th, td, hr, button, article, aside, details,
+figcaption, figure, footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: ostrichsans-bold-jian;
+  src: url("../fonts/ostrichsans-bold-jian.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrichsans-bold-jian.TTF") format("truetype"), url("../fonts/ostrichsans-bold-jian.otf"); }
+@font-face {
+  font-family: ostrichsans-light-jian;
+  src: url("../fonts/ostrichsans-light-jian.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrichsans-light-jian.TTF") format("truetype"), url("../fonts/ostrichsans-light-jian.otf"); }
+@font-face {
+  font-family: ostrichsans-mediun;
+  src: url("../fonts/ostrichsans-mediun.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrichsans-mediun.ttf") format("truetype"), url("../fonts/ostrichsans-mediun.otf"); }
+li {
+  list-style-type: none; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font: 16px arial, "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  letter-spacing: 1px;
+  color: #000;
+  background-color: #fff; }
+  body .contain_div, html .contain_div {
+    width: 1300px;
+    margin: 0 auto; }
+  body header, body section, body footer, html header, html section, html footer {
+    width: 100%; }
+
+.float_r {
+  float: right; }
+
+.float_l {
+  float: left; }
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+
+.icon_loading {
+  width: 31px;
+  height: 31px;
+  background: url("../../img/pc/icon/icon_loading_gray.gif") no-repeat;
+  background-size: 100% 100%; }
+
+.icon_remove_orange {
+  background: url("../../img/pc/icon/icon_remove_orange.jpg") no-repeat;
+  background-size: 100% 100%; }
+
+.icon_arrow_white {
+  background: url("../../img/pc/icon/icon_arrow_white.png") no-repeat;
+  background-size: 100% 100%; }
+
+.icon-search {
+  background: url("../../img/pc/icon/icon_search.png") no-repeat;
+  background-size: 51px 25px; }
+
+.icon_loading_gray {
+  background: url("../../img/pc/icon/icon_loading_gray.gif") no-repeat;
+  background-size: 100% 100%; }
+
+.iframe_div {
+  width: 600px;
+  height: 400px;
+  position: relative; }
+  .iframe_div iframe {
+    width: 100%;
+    height: 100%; }
+  .iframe_div .loading_div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding-top: 1px; }
+    .iframe_div .loading_div .loading_center {
+      width: 100%;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      margin-top: 30%; }
+      .iframe_div .loading_div .loading_center .icon_loading {
+        margin-right: 20px; }
+      .iframe_div .loading_div .loading_center span {
+        line-height: 32px; }

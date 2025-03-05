@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数字文物</title>
+
+    <meta name="csrf-param" content="_csrf-backend">
+    <meta name="csrf-token" content="6aR7WJcoWuwmHZ3bvNst-ZX2MaPNCBIHv9c2B4BhaFe8wwkt021u1WJW55Hpr0q02Z1f7pdcRE3rhXBjtD46YQ==">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/ladda-themeless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/common.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/cultural-relics.css">
+    <script>
+        var frontend_cdn_url = "../../../static/";
+    </script>
+</head>
+<body>
+
+<div class="screen_div">
+    <iframe id="iframe" src="../../static/js/threed/pc/threed-model-browser.html"></iframe>
+
+    <!-- 页面样式 -->
+    <div class="logo_div">
+        <a href="index.html"></a>
+    </div>
+    <ul class="left_btn_group">
+        <li class="return_btn"> <span>返回首页</span> <a href="/"></a></li>
+        <li class="reset_btn"> <span>重置</span> </li>
+    </ul>
+    <ul class="backimg_ul">
+        <li value="0"></li>
+        <li value="1" ></li>
+    </ul>
+    <div class="info_div"></div>
+    <ul class="btn_group">
+        <li class="menu_btn">    <span>详情</span><i></i> <strong>详情</strong></li>
+        <li class="hotspot_btn"> <span>热点</span><i></i>  <strong>热点</strong></li>
+        <li class="measure_btn"> <span>尺寸</span><i></i>  <strong>尺寸</strong></li>
+        <li class="code_btn">    <span>扫码分享</span><i></i>   <strong>扫码分享</strong></li>
+    </ul>
+    <ul class="measure_group">
+        <li class="active" status="x"><i></i></li>
+        <li status="y"><i></i></li>
+        <li status="z"><i></i></li>
+    </ul>
+
+    <!-- 弹出样式 -->
+    <div class="cultural_relics_div">
+        <div class="cultural_relics_title">
+            <i class="icon icon_arrow_right"></i>
+            <span class="cultural_relics_title_span">文物详情</span>
+        </div>
+        <div class="cultural_relics_center">
+            <div class="center_main">
+                <p class="center_title"></p>
+                <p class="center_date"></p>
+                <ul class="tag_ul">
+                    <li name="style">
+                        <label>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：</label>
+                        <span></span>
+                    </li>
+                    <li name="material">
+                        <label>材&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;质：</label>
+                        <span></span>
+                    </li>
+                    <li name="source">
+                        <label>出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处：</label>
+                        <span></span>
+                    </li>
+                    <li name="purpose">
+                        <label>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：</label>
+                        <span></span>
+                    </li>
+                    <li name="level">
+                        <label>级&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+                        <span></span>
+                    </li>
+                    <li name="volume">
+                        <label>尺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寸：</label>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="center_discrible">
+                <span class="discrible_title">文物故事：</span>
+                <span class="discrible_center"></span>
+            </div>
+        </div>
+    </div>
+    <div class="qrcode_div">
+        <div class="qrcode_center_div">
+            <i class="icon icon_arrow_white"></i>
+            <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=7bcb659c9745d688a302b5a29cf91a23/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+<script src="../../static/js/common/jquery.min.js"></script>
+<script src="../../static/js/common/ajax.js"></script>
+<script src="../../static/js/common/common.js"></script>
+
+<script src="../../static/js/pc/cultural-relics.js"></script>
+</body>
+</html>

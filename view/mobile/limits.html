@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>访问受限</title>
+
+    <meta name="csrf-param" content="_csrf-backend">
+    <meta name="csrf-token" content="6aR7WJcoWuwmHZ3bvNst-ZX2MaPNCBIHv9c2B4BhaFe8wwkt021u1WJW55Hpr0q02Z1f7pdcRE3rhXBjtD46YQ==">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/bootstrap-select.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/common/ladda-themeless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/mobile/common.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/mobile/limits.css">
+</head>
+<body>
+<section>
+    <div class="contain_div">
+        <div class="border_div">
+            <span>对不起，您的访问受限</span>
+        </div>
+        <p>如需解决，请发送邮件至 5467812156@163.com</p>
+    </div>
+</section>
+
+<script src="../../static/js/common/jquery.min.js"></script>
+<script>
+    $(function () {
+        var window_h = $(window).innerHeight();
+        var border_h = $(".border_div").outerHeight(true);
+        var border_pad = (window_h-border_h)/2-50;
+
+        $("section").css({"padding-top":border_pad+"px"});
+    })
+</script>
+</body>
+</html>

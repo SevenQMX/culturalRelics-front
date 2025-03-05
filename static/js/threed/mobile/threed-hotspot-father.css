@@ -1,0 +1,165 @@
+html .screen_div .hotSpot_detail_div, body .screen_div .hotSpot_detail_div {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  padding: 0;
+  background-color: #eeeeee; }
+  html .screen_div .hotSpot_detail_div .icon_hotspot_remove, body .screen_div .hotSpot_detail_div .icon_hotspot_remove {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    background: url("../../../img/threed/icon_back.png") no-repeat;
+    background-size: 50px 20px;
+    background-position: 0px 0px; }
+  html .screen_div .hotSpot_detail_div .icon_hotspot_remove:active, body .screen_div .hotSpot_detail_div .icon_hotspot_remove:active {
+    background-position: -38px 0px; }
+  html .screen_div .hotSpot_detail_div > div, body .screen_div .hotSpot_detail_div > div {
+    width: 100%;
+    background-color: white; }
+    html .screen_div .hotSpot_detail_div > div iframe, body .screen_div .hotSpot_detail_div > div iframe {
+      width: 100%;
+      height: 100%;
+      z-index: 300; }
+    html .screen_div .hotSpot_detail_div > div img, body .screen_div .hotSpot_detail_div > div img {
+      width: 100%;
+      height: 100%; }
+  html .screen_div .hotSpot_detail_div > div.audio_group, body .screen_div .hotSpot_detail_div > div.audio_group {
+    height: 70px;
+    padding: 20px 12px;
+    position: relative; }
+    html .screen_div .hotSpot_detail_div > div.audio_group audio, body .screen_div .hotSpot_detail_div > div.audio_group audio {
+      opacity: 0; }
+    html .screen_div .hotSpot_detail_div > div.audio_group .audio_div, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div {
+      height: 100%;
+      width: 100%;
+      overflow: hidden; }
+      html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .icon.icon_audio, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .icon.icon_audio {
+        margin-top: 4px;
+        width: 24px;
+        height: 24px;
+        float: left;
+        cursor: pointer; }
+      html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .icon.icon_audio[status="on"], body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .icon.icon_audio[status="on"] {
+        background: url("../../../img/threed/icon_audio_on.png") no-repeat;
+        background-size: 100% 100%; }
+      html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .icon.icon_audio[status="off"], body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .icon.icon_audio[status="off"] {
+        background: url("../../../img/threed/icon_audio_off.png") no-repeat;
+        background-size: 100% 100%; }
+      html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul {
+        height: 30px;
+        float: left;
+        padding-left: 14px; }
+        html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_name, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_name {
+          display: block;
+          width: 100%;
+          height: 24px; }
+          html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_name .audio_title, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_name .audio_title {
+            height: 16px;
+            width: 60%;
+            float: left;
+            font-size: 1.4rem;
+            line-height: 16px;
+            color: #2C2C2C;
+            font-weight: bold; }
+          html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_name .audio_time, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_name .audio_time {
+            height: 16px;
+            width: 40%;
+            float: right;
+            font-size: 1.2rem;
+            line-height: 16px;
+            text-align: right;
+            color: #6b6b6b; }
+        html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_process, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_process {
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: #b2b2b2; }
+          html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_process > div, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul .audio_process > div {
+            height: 2px;
+            background-color: #000000; }
+  html .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group, body .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group {
+    padding: 0; }
+    html .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group .hotSpot_discrible_div, body .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group .hotSpot_discrible_div {
+      width: 100%;
+      padding: 20px 12px; }
+      html .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group .hotSpot_discrible_div .hotSpot_title, body .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group .hotSpot_discrible_div .hotSpot_title {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.6rem;
+        margin-bottom: 10px;
+        color: #010101; }
+      html .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group .hotSpot_discrible_div .hotSpot_discrible, body .screen_div .hotSpot_detail_div > div.hotSpot_discrible_group .hotSpot_discrible_div .hotSpot_discrible {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 20px;
+        color: #6b6b6b; }
+  html .screen_div .hotSpot_detail_div > div.img_div, body .screen_div .hotSpot_detail_div > div.img_div {
+    padding: 12px; }
+html .screen_div .hotSpot_detail_div::-webkit-scrollbar, body .screen_div .hotSpot_detail_div::-webkit-scrollbar {
+  width: 0px;
+  height: 16px;
+  background-color: #F5F5F5; }
+html .screen_div .hotSpot_detail_div::-webkit-scrollbar-track, body .screen_div .hotSpot_detail_div::-webkit-scrollbar-track {
+  background-color: #d5d5d5; }
+html .screen_div .hotSpot_detail_div::-webkit-scrollbar-thumb, body .screen_div .hotSpot_detail_div::-webkit-scrollbar-thumb {
+  background-color: #545454; }
+
+/* iphone4,iphone5 */
+@media screen and (max-width: 330px) {
+  html .screen_div .hotSpot_detail_div > div, body .screen_div .hotSpot_detail_div > div {
+    margin-bottom: 9px; }
+  html .screen_div .hotSpot_detail_div .img_div, body .screen_div .hotSpot_detail_div .img_div {
+    height: 330px; }
+  html .screen_div .hotSpot_detail_div .video_div, body .screen_div .hotSpot_detail_div .video_div {
+    height: 220px; }
+  html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul {
+    width: 260px; }
+  html .screen_div .hotSpot_detail_div div:nth-last-child(1), body .screen_div .hotSpot_detail_div div:nth-last-child(1) {
+    margin-bottom: 0px; } }
+/* iphone6 */
+@media screen and (min-width: 331px) and (max-width: 375px) {
+  html .screen_div .hotSpot_detail_div > div, body .screen_div .hotSpot_detail_div > div {
+    margin-bottom: 10px; }
+  html .screen_div .hotSpot_detail_div .video_div, body .screen_div .hotSpot_detail_div .video_div {
+    height: 250px; }
+  html .screen_div .hotSpot_detail_div .img_div, body .screen_div .hotSpot_detail_div .img_div {
+    height: 375px; }
+  html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul {
+    width: 305px; }
+  html .screen_div .hotSpot_detail_div div:nth-last-child(1), body .screen_div .hotSpot_detail_div div:nth-last-child(1) {
+    margin-bottom: 0px; } }
+/* iphone6Plus */
+@media screen and (min-width: 376px) and (max-width: 479px) {
+  html .screen_div .hotSpot_detail_div > div, body .screen_div .hotSpot_detail_div > div {
+    margin-bottom: 13px; }
+  html .screen_div .hotSpot_detail_div .video_div, body .screen_div .hotSpot_detail_div .video_div {
+    height: 320px; }
+  html .screen_div .hotSpot_detail_div .img_div, body .screen_div .hotSpot_detail_div .img_div {
+    height: 414px; }
+  html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul {
+    width: 344px; }
+  html .screen_div .hotSpot_detail_div div:nth-last-child(1), body .screen_div .hotSpot_detail_div div:nth-last-child(1) {
+    margin-bottom: 0px; } }
+/* ipad*/
+@media screen and (min-width: 768px) {
+  html .screen_div .hotSpot_detail_div > div, body .screen_div .hotSpot_detail_div > div {
+    width: 414px;
+    margin: 0 auto;
+    margin-bottom: 13px; }
+  html .screen_div .hotSpot_detail_div .video_div, body .screen_div .hotSpot_detail_div .video_div {
+    height: 320px; }
+  html .screen_div .hotSpot_detail_div .img_div, body .screen_div .hotSpot_detail_div .img_div {
+    height: 414px; }
+  html .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul, body .screen_div .hotSpot_detail_div > div.audio_group .audio_div .audio_process_ul {
+    width: 344px; }
+  html .screen_div .hotSpot_detail_div div:nth-last-child(1), body .screen_div .hotSpot_detail_div div:nth-last-child(1) {
+    margin-bottom: 0px; } }

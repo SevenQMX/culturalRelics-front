@@ -1,0 +1,137 @@
+html,body, div,
+dl, dt, dd,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset,
+legend, input, textarea, p, blockquote,
+th, td, hr, button, article, aside, details,
+figcaption, figure, footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+
+  font-family: Monospace;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+
+  .canvas_div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    canvas{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .hotSpot_div{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+
+    .hotSpot_ul{
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+
+      .hotSpot_li{
+        position: absolute;
+        opacity: 0;
+
+        list-style-type: none;
+        .hotSpot_all_div{
+          position: relative;
+
+          .icon{
+            display: block;
+          }
+          .icon_hotspot_span{
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            width: 52px;
+            height: 52px;
+
+            cursor: pointer;
+            .icon_hotspot_center{
+              width: 100%;
+              height: 100%;
+
+              position: relative;
+              .icon_hotspot_back{
+                border-radius: 50px;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+
+                top: 0px;
+                left: 0px;
+                z-index: 10;
+                background: url("../../../img/threed/icon_hotspot_pointbg.png") no-repeat;
+                background-position:0 0;
+              }
+
+              .icon_hotspot_circle{
+                width: 22px;
+                height: 22px;
+
+                position: absolute;
+                top: 15px;
+                left: 15px;
+
+                z-index: 11;
+                background: url("../../../img/threed/icon_hotspot_point.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .loading_div{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    padding-top: 0px;
+    .loading_center{
+      width: 240px;
+      height: 3px;
+      border-radius: 10px;
+
+      margin: 0 auto;
+
+      background-color: rgba(00,00,00,0.2);
+      .loading_progress{
+        height: 100%;
+        border-radius: 10px;
+
+        background-color: rgba(00,00,00,0.6);
+      }
+    }
+  }
+}

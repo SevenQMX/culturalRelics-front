@@ -1,0 +1,268 @@
+html,body {
+  .screen_div{
+    .hotSpot_detail_div{
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
+
+      position: absolute;
+      top: 0 ;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: 300;
+      padding: 0;
+      background-color: rgb(238, 238, 238);
+
+      .icon_hotspot_remove{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+
+        background: url("../../../img/threed/icon_back.png") no-repeat;
+        background-size: 50px 20px;
+        background-position: 0px 0px;
+      }
+      .icon_hotspot_remove:active{
+        background-position: -38px 0px;
+      }
+      >div{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        iframe{
+          width: 100%;
+          height: 100%;
+          z-index: 300;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      >div.audio_group{
+        height: 70px;
+        padding: 20px 12px;
+        position: relative;
+        audio{
+          opacity: 0;
+        }
+        .audio_div{
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+          .icon.icon_audio{
+            margin-top: 4px;
+            width: 24px;
+            height: 24px;
+            float: left;
+            cursor: pointer;
+          }
+          .icon.icon_audio[status="on"]{
+            background: url("../../../img/threed/icon_audio_on.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          .icon.icon_audio[status="off"]{
+            background: url("../../../img/threed/icon_audio_off.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          .audio_process_ul{
+            height: 30px;
+            float: left;
+            padding-left: 14px;
+
+            .audio_name{
+              display: block;
+              width: 100%;
+              height: 24px;
+              .audio_title{
+                height: 16px;
+                width: 60%;
+                float: left;
+
+                font-size: 1.4rem;
+                line-height: 16px;
+                color: #2C2C2C;
+                font-weight: bold;
+              }
+              .audio_time{
+                height: 16px;
+                width: 40%;
+                float: right;
+
+                font-size: 1.2rem;
+                line-height: 16px;
+                text-align: right;
+                color: #6b6b6b;
+              }
+            }
+            .audio_process{
+              display: block;
+              width: 100%;
+              height: 2px;
+              background-color: #b2b2b2;
+              >div{
+                height: 2px;
+                background-color: #000000;
+              }
+            }
+          }
+        }
+      }
+      >div.hotSpot_discrible_group{
+        padding: 0;
+        .hotSpot_discrible_div{
+          width: 100%;
+          padding: 20px 12px;
+          .hotSpot_title{
+            display: block;
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 1.6rem;
+            margin-bottom: 10px;
+            color: #010101;
+          }
+          .hotSpot_discrible{
+            display: block;
+            font-size: 1.2rem;
+            line-height: 20px;
+            color: #6b6b6b;
+          }
+        }
+      }
+      >div.img_div{
+        padding: 12px;
+      }
+    }
+    .hotSpot_detail_div::-webkit-scrollbar {
+      width:0px;
+      height:16px;
+      background-color:#F5F5F5;
+    }
+    .hotSpot_detail_div::-webkit-scrollbar-track {
+      background-color: #d5d5d5;
+    }
+    .hotSpot_detail_div::-webkit-scrollbar-thumb {
+      background-color: #545454;
+    }
+  }
+}
+
+/* iphone4,iphone5 */
+@media screen and (max-width:330px){
+  html,body {
+    .screen_div{
+      .hotSpot_detail_div{
+        >div{
+          margin-bottom: 9px;
+        }
+        .img_div{
+          height: 330px;
+        }
+        .video_div{
+          height: 220px;
+        }
+        >div.audio_group{
+          .audio_div{
+            .audio_process_ul{
+              width: 330px - 70px ;
+            }
+          }
+        }
+        div:nth-last-child(1){
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+/* iphone6 */
+@media screen and (min-width:331px) and (max-width:375px){
+  html,body {
+    .screen_div{
+      .hotSpot_detail_div{
+        >div{
+          margin-bottom: 10px;
+        }
+        .video_div{
+          height: 250px;
+        }
+        .img_div{
+          height: 375px;
+        }
+        >div.audio_group{
+          .audio_div{
+            .audio_process_ul{
+              width: 375px - 70px ;
+            }
+          }
+        }
+        div:nth-last-child(1){
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+/* iphone6Plus */
+@media screen and (min-width:376px) and (max-width:479px){
+  html,body {
+    .screen_div{
+      .hotSpot_detail_div{
+        >div{
+          margin-bottom: 13px;
+        }
+        .video_div{
+          height: 320px;
+        }
+        .img_div{
+          height: 414px;
+        }
+        >div.audio_group{
+          .audio_div{
+            .audio_process_ul{
+              width: 414px - 70px ;
+            }
+          }
+        }
+        div:nth-last-child(1){
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+/* ipad*/
+@media screen and (min-width:768px) {
+  html,body {
+    .screen_div{
+      .hotSpot_detail_div{
+        >div{
+          width: 414px;
+          margin: 0 auto;
+          margin-bottom: 13px;
+        }
+        .video_div{
+          height: 320px;
+        }
+        .img_div{
+          height: 414px;
+        }
+        >div.audio_group{
+          .audio_div{
+            .audio_process_ul{
+              width: 414px - 70px ;
+            }
+          }
+        }
+        div:nth-last-child(1){
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,442 @@
+html, body {
+  background-color: lightgray;
+  overflow: hidden; }
+  html .screen_div, body .screen_div {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    html .screen_div iframe, body .screen_div iframe {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border: none; }
+    html .screen_div .logo_div, body .screen_div .logo_div {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      width: 176px;
+      height: 92px; }
+      html .screen_div .logo_div a, body .screen_div .logo_div a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    html .screen_div .left_btn_group, body .screen_div .left_btn_group {
+      position: absolute;
+      left: 10px;
+      top: 40%;
+      z-index: 100;
+      width: 36px;
+      padding-top: 80px; }
+      html .screen_div .left_btn_group > li, body .screen_div .left_btn_group > li {
+        list-style-type: none;
+        cursor: pointer;
+        margin-bottom: 45px;
+        width: 36px;
+        position: relative; }
+        html .screen_div .left_btn_group > li span, body .screen_div .left_btn_group > li span {
+          display: none;
+          position: absolute;
+          top: 6px;
+          left: 50px;
+          width: 40px;
+          padding: 3px 0;
+          font-family: ostrichsans-light-jian;
+          font-size: 12px;
+          text-align: center;
+          background-color: #fafafa;
+          border: 1px solid rgba(0, 0, 0, 0.1); }
+      html .screen_div .left_btn_group > li:hover span, body .screen_div .left_btn_group > li:hover span {
+        display: block; }
+      html .screen_div .left_btn_group .reset_btn, body .screen_div .left_btn_group .reset_btn {
+        height: 28px; }
+      html .screen_div .left_btn_group .return_btn, body .screen_div .left_btn_group .return_btn {
+        height: 36px; }
+        html .screen_div .left_btn_group .return_btn span, body .screen_div .left_btn_group .return_btn span {
+          width: 60px; }
+        html .screen_div .left_btn_group .return_btn a, body .screen_div .left_btn_group .return_btn a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+    html .screen_div .backimg_ul, body .screen_div .backimg_ul {
+      position: absolute;
+      top: 10px;
+      left: 48%;
+      z-index: 100; }
+      html .screen_div .backimg_ul li, body .screen_div .backimg_ul li {
+        width: 14px;
+        height: 14px;
+        margin-right: 14px;
+        cursor: pointer;
+        list-style-type: none;
+        float: left; }
+      html .screen_div .backimg_ul li:nth-last-child(1), body .screen_div .backimg_ul li:nth-last-child(1) {
+        margin-right: 0; }
+    html .screen_div .info_div, body .screen_div .info_div {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 100;
+      padding-right: 5px;
+      text-align: right;
+      font-family: ostrichsans-bold-jian; }
+      html .screen_div .info_div > span, body .screen_div .info_div > span {
+        display: block; }
+      html .screen_div .info_div .title, body .screen_div .info_div .title {
+        font-size: 30px; }
+      html .screen_div .info_div .dates, body .screen_div .info_div .dates {
+        font-size: 21px; }
+      html .screen_div .info_div .tag, body .screen_div .info_div .tag {
+        font-size: 16px; }
+    html .screen_div .btn_group, body .screen_div .btn_group {
+      position: absolute;
+      width: 30px;
+      right: 20px;
+      top: 40%;
+      z-index: 100;
+      padding-right: 10px; }
+      html .screen_div .btn_group li, body .screen_div .btn_group li {
+        list-style-type: none;
+        cursor: pointer;
+        margin-bottom: 45px;
+        width: 30px;
+        height: 32px;
+        position: relative; }
+        html .screen_div .btn_group li span, body .screen_div .btn_group li span {
+          display: none;
+          position: absolute;
+          top: 42px;
+          left: -5px;
+          width: 40px;
+          padding: 3px 0;
+          font-family: ostrichsans-light-jian;
+          font-size: 12px;
+          text-align: center;
+          background-color: #fafafa;
+          border: 1px solid rgba(0, 0, 0, 0.1); }
+        html .screen_div .btn_group li i, body .screen_div .btn_group li i {
+          position: relative;
+          right: 0px;
+          top: 5px;
+          display: block;
+          width: 30px;
+          height: 32px; }
+        html .screen_div .btn_group li strong, body .screen_div .btn_group li strong {
+          display: none;
+          position: absolute;
+          top: 9px;
+          left: 20px;
+          color: #fff;
+          font-weight: bold;
+          font-size: 14px; }
+      html .screen_div .btn_group .code_btn span, body .screen_div .btn_group .code_btn span {
+        width: 60px;
+        left: -16px; }
+      html .screen_div .btn_group li.active, body .screen_div .btn_group li.active {
+        left: -80px;
+        width: 118px;
+        height: 40px;
+        border-radius: 80px;
+        background-color: #cc0000; }
+        html .screen_div .btn_group li.active strong, body .screen_div .btn_group li.active strong {
+          display: block; }
+        html .screen_div .btn_group li.active i, body .screen_div .btn_group li.active i {
+          right: -78px !important; }
+      html .screen_div .btn_group li:hover span, body .screen_div .btn_group li:hover span {
+        display: block; }
+      html .screen_div .btn_group li.active:hover span, body .screen_div .btn_group li.active:hover span {
+        display: block;
+        left: 74px; }
+    html .screen_div .measure_group, body .screen_div .measure_group {
+      display: none;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      z-index: 100;
+      width: 320px;
+      height: 46px;
+      margin-left: -160px;
+      padding: 2px;
+      border-radius: 100px; }
+      html .screen_div .measure_group li, body .screen_div .measure_group li {
+        width: 33.333%;
+        height: 100%;
+        float: left;
+        cursor: pointer;
+        padding: 6px 0 0 42px; }
+        html .screen_div .measure_group li i, body .screen_div .measure_group li i {
+          display: block;
+          width: 26px;
+          height: 30px; }
+      html .screen_div .measure_group li[status="x"] i, body .screen_div .measure_group li[status="x"] i {
+        background: url("../../img/pc/icon/measure_x.png") no-repeat;
+        background-position: 0 0; }
+      html .screen_div .measure_group li[status="y"] i, body .screen_div .measure_group li[status="y"] i {
+        background: url("../../img/pc/icon/measure_y.png") no-repeat;
+        background-position: 0 0; }
+      html .screen_div .measure_group li[status="z"] i, body .screen_div .measure_group li[status="z"] i {
+        background: url("../../img/pc/icon/measure_z.png") no-repeat;
+        background-position: 0 0; }
+      html .screen_div .measure_group li.active, body .screen_div .measure_group li.active {
+        border-radius: 100px; }
+        html .screen_div .measure_group li.active i, body .screen_div .measure_group li.active i {
+          background-position: -27px 0; }
+    html .screen_div .cultural_relics_div, body .screen_div .cultural_relics_div {
+      display: none;
+      width: 298px;
+      height: 100%;
+      position: absolute;
+      right: -298px;
+      top: 0;
+      z-index: 200;
+      font-family: ostrichsans-light-jian;
+      font-size: 16px; }
+      html .screen_div .cultural_relics_div .cultural_relics_title, body .screen_div .cultural_relics_div .cultural_relics_title {
+        width: 100%;
+        height: 60px;
+        padding: 13px 15px 0 5px; }
+        html .screen_div .cultural_relics_div .cultural_relics_title .icon_arrow_right, body .screen_div .cultural_relics_div .cultural_relics_title .icon_arrow_right {
+          float: left;
+          width: 22px;
+          height: 28px;
+          cursor: pointer;
+          background-position: 0px 0px; }
+        html .screen_div .cultural_relics_div .cultural_relics_title .cultural_relics_title_span, body .screen_div .cultural_relics_div .cultural_relics_title .cultural_relics_title_span {
+          float: right;
+          line-height: 28px; }
+      html .screen_div .cultural_relics_div .cultural_relics_center, body .screen_div .cultural_relics_div .cultural_relics_center {
+        width: 100%;
+        font-size: 14px;
+        padding: 0px 26px 0 30px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_main, body .screen_div .cultural_relics_div .cultural_relics_center .center_main {
+          width: 100%;
+          padding: 40px 0; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_title {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: bold; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .center_date {
+            line-height: 14px;
+            margin-top: 10px; }
+          html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul {
+            width: 100%;
+            padding-top: 40px; }
+            html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+              width: 100%;
+              min-height: 20px;
+              line-height: 20px;
+              margin-bottom: 20px;
+              position: relative; }
+              html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label {
+                position: absolute;
+                top: -1px;
+                left: 0; }
+              html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li span, body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li span {
+                width: 100%;
+                padding-left: 84px;
+                display: inline-block; }
+            html .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li:nth-last-child(1), body .screen_div .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li:nth-last-child(1) {
+              margin-bottom: 0px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible > span, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible > span {
+          display: block; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+          height: 20px;
+          line-height: 16px; }
+        html .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+          text-indent: 30px;
+          line-height: 24px;
+          word-wrap: break-word; }
+    html .screen_div .cultural_relics_div.active, body .screen_div .cultural_relics_div.active {
+      display: block; }
+    html .screen_div .qrcode_div, body .screen_div .qrcode_div {
+      display: none;
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      right: 80px;
+      top: 41.2%;
+      margin-top: 192px;
+      border-radius: 3px;
+      z-index: 200; }
+      html .screen_div .qrcode_div .qrcode_center_div, body .screen_div .qrcode_div .qrcode_center_div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 3px; }
+        html .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white, body .screen_div .qrcode_div .qrcode_center_div .icon_arrow_white {
+          position: absolute;
+          width: 10px;
+          height: 20px;
+          right: -10px;
+          top: 45px; }
+        html .screen_div .qrcode_div .qrcode_center_div img, body .screen_div .qrcode_div .qrcode_center_div img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-radius: 3px; }
+    html .screen_div .qrcode_div.active, body .screen_div .qrcode_div.active {
+      display: block; }
+  html .screen_div.whitebg .left_btn_group .return_btn, body .screen_div.whitebg .left_btn_group .return_btn {
+    background: url("../../img/pc/center/cultural-relics-whitebg/home.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.whitebg .left_btn_group .reset_div:hover, body .screen_div.whitebg .left_btn_group .reset_div:hover {
+    background-position: -37px 0; }
+  html .screen_div.whitebg .left_btn_group .reset_div:active, body .screen_div.whitebg .left_btn_group .reset_div:active {
+    background-position: 0 0; }
+  html .screen_div.whitebg .left_btn_group .reset_btn, body .screen_div.whitebg .left_btn_group .reset_btn {
+    background: url("../../img/pc/center/cultural-relics-whitebg/camera.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.whitebg .left_btn_group .reset_btn:hover, body .screen_div.whitebg .left_btn_group .reset_btn:hover {
+    background-position: -37px 0; }
+  html .screen_div.whitebg .left_btn_group .reset_btn:active, body .screen_div.whitebg .left_btn_group .reset_btn:active {
+    background-position: 0 0; }
+  html .screen_div.whitebg .logo_div, body .screen_div.whitebg .logo_div {
+    background: url("../../img/pc/center/cultural-relics-whitebg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.whitebg .backimg_ul li, body .screen_div.whitebg .backimg_ul li {
+    background: url("../../img/pc/center/cultural-relics-whitebg/point.png") no-repeat; }
+  html .screen_div.whitebg .backimg_ul li.active, body .screen_div.whitebg .backimg_ul li.active {
+    background: url("../../img/pc/center/cultural-relics-whitebg/point_active.png") no-repeat; }
+  html .screen_div.whitebg .info_div, body .screen_div.whitebg .info_div {
+    color: rgba(0, 0, 0, 0.85);
+    border-right: 3px solid #cc9900; }
+  html .screen_div.whitebg .btn_group li.menu_btn i, body .screen_div.whitebg .btn_group li.menu_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/menu.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.hotspot_btn i, body .screen_div.whitebg .btn_group li.hotspot_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/video.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.code_btn i, body .screen_div.whitebg .btn_group li.code_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/code.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li.measure_btn i, body .screen_div.whitebg .btn_group li.measure_btn i {
+    background: url("../../img/pc/center/cultural-relics-whitebg/measure.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.whitebg .btn_group li:hover i, body .screen_div.whitebg .btn_group li:hover i {
+    background-position: -31px 0; }
+  html .screen_div.whitebg .btn_group li:active i, body .screen_div.whitebg .btn_group li:active i {
+    background-position: 0 0; }
+  html .screen_div.whitebg .measure_group, body .screen_div.whitebg .measure_group {
+    background-color: rgba(0, 0, 0, 0.2); }
+    html .screen_div.whitebg .measure_group li.active, body .screen_div.whitebg .measure_group li.active {
+      background-color: #42424d; }
+  html .screen_div.whitebg .cultural_relics_div, body .screen_div.whitebg .cultural_relics_div {
+    background-color: #fafafa; }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_title, body .screen_div.whitebg .cultural_relics_div .cultural_relics_title {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      html .screen_div.whitebg .cultural_relics_div .cultural_relics_title .icon_arrow_right, body .screen_div.whitebg .cultural_relics_div .cultural_relics_title .icon_arrow_right {
+        background: url("../../img/pc/center/cultural-relics-whitebg/icon_arrow_right.png") no-repeat;
+        background-size: 23px 18px;
+        border: 5px solid #fafafa; }
+      html .screen_div.whitebg .cultural_relics_div .cultural_relics_title .icon_arrow_right:hover, body .screen_div.whitebg .cultural_relics_div .cultural_relics_title .icon_arrow_right:hover {
+        background-position: -12px 0; }
+      html .screen_div.whitebg .cultural_relics_div .cultural_relics_title .icon_arrow_right:active, body .screen_div.whitebg .cultural_relics_div .cultural_relics_title .icon_arrow_right:active {
+        background-position: 0 0; }
+      html .screen_div.whitebg .cultural_relics_div .cultural_relics_title .cultural_relics_title_span, body .screen_div.whitebg .cultural_relics_div .cultural_relics_title .cultural_relics_title_span {
+        color: rgba(0, 0, 0, 0.95); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .center_title {
+      color: rgba(0, 0, 0, 0.85); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .center_date {
+      color: rgba(0, 0, 0, 0.65); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+      color: rgba(0, 0, 0, 0.65); }
+      html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label {
+        color: rgba(0, 0, 0, 0.95); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+      color: rgba(0, 0, 0, 0.95); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+      color: rgba(0, 0, 0, 0.65); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar {
+      width: 4px;
+      height: 16px;
+      background-color: rgba(0, 0, 0, 0.1); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.01); }
+    html .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb, body .screen_div.whitebg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.4); }
+  html .screen_div.whitebg .qrcode_div, body .screen_div.whitebg .qrcode_div {
+    background-color: #fafafa; }
+  html .screen_div.blackbg .left_btn_group .return_btn, body .screen_div.blackbg .left_btn_group .return_btn {
+    background: url("../../img/pc/center/cultural-relics-blackbg/home.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.blackbg .left_btn_group .return_btn:hover, body .screen_div.blackbg .left_btn_group .return_btn:hover {
+    background-position: -37px 0; }
+  html .screen_div.blackbg .left_btn_group .return_btn:active, body .screen_div.blackbg .left_btn_group .return_btn:active {
+    background-position: 0 0; }
+  html .screen_div.blackbg .left_btn_group .reset_btn, body .screen_div.blackbg .left_btn_group .reset_btn {
+    background: url("../../img/pc/center/cultural-relics-blackbg/camera.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.blackbg .left_btn_group .reset_btn:hover, body .screen_div.blackbg .left_btn_group .reset_btn:hover {
+    background-position: -37px 0; }
+  html .screen_div.blackbg .left_btn_group .reset_btn:active, body .screen_div.blackbg .left_btn_group .reset_btn:active {
+    background-position: 0 0; }
+  html .screen_div.blackbg .logo_div a, body .screen_div.blackbg .logo_div a {
+    background: url("../../img/pc/center/cultural-relics-blackbg/logo.png") no-repeat;
+    background-size: 100% 100%; }
+  html .screen_div.blackbg .backimg_ul li, body .screen_div.blackbg .backimg_ul li {
+    background: url("../../img/pc/center/cultural-relics-blackbg/point.png") no-repeat; }
+  html .screen_div.blackbg .backimg_ul li.active, body .screen_div.blackbg .backimg_ul li.active {
+    background: url("../../img/pc/center/cultural-relics-blackbg/point_active.png") no-repeat; }
+  html .screen_div.blackbg .info_div, body .screen_div.blackbg .info_div {
+    color: rgba(250, 250, 250, 0.85);
+    border-right: 3px solid #a48854; }
+  html .screen_div.blackbg .btn_group li.menu_btn i, body .screen_div.blackbg .btn_group li.menu_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/menu.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.hotspot_btn i, body .screen_div.blackbg .btn_group li.hotspot_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/video.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.code_btn i, body .screen_div.blackbg .btn_group li.code_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/code.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li.measure_btn i, body .screen_div.blackbg .btn_group li.measure_btn i {
+    background: url("../../img/pc/center/cultural-relics-blackbg/measure.png") no-repeat;
+    background-position: 0 0; }
+  html .screen_div.blackbg .btn_group li:hover i, body .screen_div.blackbg .btn_group li:hover i {
+    background-position: -31px 0; }
+  html .screen_div.blackbg .btn_group li:active i, body .screen_div.blackbg .btn_group li:active i {
+    background-position: 0 0; }
+  html .screen_div.blackbg .measure_group, body .screen_div.blackbg .measure_group {
+    background-color: rgba(250, 250, 250, 0.2); }
+    html .screen_div.blackbg .measure_group li.active, body .screen_div.blackbg .measure_group li.active {
+      background-color: #42424d; }
+  html .screen_div.blackbg .cultural_relics_div, body .screen_div.blackbg .cultural_relics_div {
+    background-color: #68707a; }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_title, body .screen_div.blackbg .cultural_relics_div .cultural_relics_title {
+      border-bottom: 1px solid rgba(250, 250, 250, 0.1); }
+      html .screen_div.blackbg .cultural_relics_div .cultural_relics_title .icon_arrow_right, body .screen_div.blackbg .cultural_relics_div .cultural_relics_title .icon_arrow_right {
+        background: url("../../img/pc/center/cultural-relics-blackbg/icon_arrow_right.png") no-repeat;
+        background-size: 23px 18px;
+        border: 5px solid #68707a; }
+      html .screen_div.blackbg .cultural_relics_div .cultural_relics_title .icon_arrow_right:hover, body .screen_div.blackbg .cultural_relics_div .cultural_relics_title .icon_arrow_right:hover {
+        background-position: -12px 0; }
+      html .screen_div.blackbg .cultural_relics_div .cultural_relics_title .icon_arrow_right:active, body .screen_div.blackbg .cultural_relics_div .cultural_relics_title .icon_arrow_right:active {
+        background-position: 0 0; }
+      html .screen_div.blackbg .cultural_relics_div .cultural_relics_title .cultural_relics_title_span, body .screen_div.blackbg .cultural_relics_div .cultural_relics_title .cultural_relics_title_span {
+        color: rgba(250, 250, 250, 0.95); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_title, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_title {
+      color: rgba(250, 250, 250, 0.85); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_date, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .center_date {
+      color: rgba(250, 250, 250, 0.65); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li {
+      color: rgba(250, 250, 250, 0.65); }
+      html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_main .tag_ul > li label {
+        color: rgba(250, 250, 250, 0.95); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_title {
+      color: rgba(250, 250, 250, 0.95); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center {
+      color: rgba(250, 250, 250, 0.65); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar {
+      width: 4px;
+      height: 16px;
+      background-color: rgba(250, 250, 250, 0.1); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-track {
+      background-color: rgba(250, 250, 250, 0.01); }
+    html .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb, body .screen_div.blackbg .cultural_relics_div .cultural_relics_center .center_discrible .discrible_center::-webkit-scrollbar-thumb {
+      background-color: rgba(250, 250, 250, 0.4); }
+  html .screen_div.blackbg .qrcode_div, body .screen_div.blackbg .qrcode_div {
+    background-color: #fafafa; }

@@ -1,0 +1,78 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #42424d; }
+  body section, html section {
+    width: 100%;
+    height: 100%;
+    padding: 1px 5.555%; }
+    body section .contain_div, html section .contain_div {
+      width: 100%;
+      height: 100%; }
+      body section .contain_div .border_div, html section .contain_div .border_div {
+        width: 100%; }
+        body section .contain_div .border_div span, html section .contain_div .border_div span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgba(250, 250, 250, 0.1);
+          color: #fafafa;
+          text-align: center; }
+      body section .contain_div p, html section .contain_div p {
+        font-size: 1.4rem;
+        line-height: 14px;
+        color: rgba(250, 250, 250, 0.6);
+        text-align: center; }
+
+/* iphone4,iphone5 */
+@media screen and (max-width: 330px) {
+  body section .contain_div .border_div, html section .contain_div .border_div {
+    height: 80px;
+    border: 3px solid rgba(250, 250, 250, 0.1);
+    padding: 5px; }
+    body section .contain_div .border_div span, html section .contain_div .border_div span {
+      font-size: 2rem;
+      line-height: 5rem; }
+  body section .contain_div p, html section .contain_div p {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    line-height: 1.2rem; } }
+/* iphone6 */
+@media screen and (min-width: 331px) and (max-width: 375px) {
+  body section .contain_div .border_div, html section .contain_div .border_div {
+    height: 84px;
+    border: 4px solid rgba(250, 250, 250, 0.1);
+    padding: 6px; }
+    body section .contain_div .border_div span, html section .contain_div .border_div span {
+      font-size: 2.2rem;
+      line-height: 5.4rem; }
+  body section .contain_div p, html section .contain_div p {
+    margin-top: 44px;
+    font-size: 1.2rem;
+    line-height: 1.2rem; } }
+/* iphone6Plus */
+@media screen and (min-width: 376px) and (max-width: 479px) {
+  body section .contain_div .border_div, html section .contain_div .border_div {
+    height: 108px;
+    border: 5px solid rgba(250, 250, 250, 0.1);
+    padding: 7px; }
+    body section .contain_div .border_div span, html section .contain_div .border_div span {
+      font-size: 2.8rem;
+      line-height: 6.8rem; }
+  body section .contain_div p, html section .contain_div p {
+    margin-top: 56px;
+    font-size: 1.2rem;
+    line-height: 1.2rem; } }
+/* ipad  mac*/
+@media screen and (min-width: 480px) {
+  body section .contain_div .border_div, html section .contain_div .border_div {
+    height: 128px;
+    border: 8px solid rgba(250, 250, 250, 0.1);
+    padding: 10px; }
+    body section .contain_div .border_div span, html section .contain_div .border_div span {
+      font-size: 2.8rem;
+      line-height: 7.2rem; }
+  body section .contain_div p, html section .contain_div p {
+    margin-top: 56px;
+    font-size: 1.4rem;
+    line-height: 1.4rem; } }
