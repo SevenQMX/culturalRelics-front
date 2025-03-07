@@ -12,6 +12,11 @@
       "materialUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1774375573,1895090765&fm=27&gp=0.jpg",
       "ShareImgUrl": "",
       "lighting": 0,
+      "cameraoffset": [
+        0,
+        0,
+        0
+      ],
       "camera_pose_x": 20,
       "camera_pose_y": 20,
       "camera_pose_z": 20,
